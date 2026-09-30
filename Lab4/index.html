@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        @import url(styles.css);
+    </style>
+
+    <script src="scripts.js"></script>
+
+    <head>
+        <title>Muyao Niu's INST377 Lab</title>
+    </head>
+
+    <body id="background">
+        <h1 id="heading">INST377 - Lab 4</h1>
+
+        <!-- 1.a -->
+        <div type="container">
+            <!-- 2.a, 2.d -->
+            <form name="nameForm" onsubmit="alertName()">
+                <div class="column">
+                    
+                    <!-- 2.b -->
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required></input>
+
+                    <!-- 2.c -->
+                    <input type="submit" value="Alert Me"></input>
+
+                </div>
+            </form>
+        </div>
+
+        <div type="container">
+            <!-- 3.a -->
+            <div class="column" id="colorBlock">
+                <!-- 3.c -->
+                <button onclick="changeColor()">Change Color</button>
+            </div>
+        </div>
+
+        <div type="container">
+            <!-- 4.a -->
+            <form name="textForm" onsubmit="testText()">
+                <div class="column">
+                    <label for="text">Text Tester</label>
+                    <input type="text" name="text_tester" required></input>
+
+                    <!-- 4.b -->
+                     <input type="submit" value="Validate Text"></input>
+                </div>
+            </form>
+        </div>
+
+        <div type="container">
+            <!-- 5.a -->
+            <div class="column">
+                <button onclick="modHeading()">Add Text</button>
+            </div>
+        </div>
+    </body>
+</html>
