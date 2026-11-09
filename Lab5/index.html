@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<script src="scripts.js"></script>
+
+    <head>
+        <title>Muyao Niu's INST377 Lab5</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+<body>
+
+    <script>
+        showAvailable();
+    </script>
+
+    <h1>Let's Convert some Currency!</h1>
+
+    <form 
+        name="convertForm" 
+        onsubmit="convertCurrency()" 
+        target="iframe"
+        >
+
+        <div>
+            <label for="fromCurrency">From Currency: </label>
+            <select id="fromCurrency" name="fromCurrency" required>
+                <!-- will be loaded here -->
+                <option id="fromSelect" value="select">select</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="toCurrency">To Currency: </label>
+            <select id="toCurrency" name="toCurrency" required>
+                <!-- will be loaded here -->
+                <option id="toSelect" value="select">select</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="numberToConvert">Number To Convert: </label>
+            <input type="number" name=fromNumber required></input>
+        </div>
+
+        <input type="submit" value="Submit"></input>
+
+        <div>
+            <h2 id="result"></h2>
+        </div>
+        
+    </form>
+
+    <iframe id="iframe" name="iframe" style="display:none;"></iframe>
+
+</body>
+
+</html>
